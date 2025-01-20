@@ -22,7 +22,7 @@ body{
 
 
 /* shared items */
-.header , .main_curriculum{
+.header , .main_curriculum , .main_stories{
     width: 1160px;
     margin: 0 auto;
 }
@@ -33,6 +33,7 @@ body{
     text-align: center;
     margin-bottom: 80px;
     font-size: 2.88rem;
+    margin-top: 0;
 }
 
 .align_items{
@@ -256,9 +257,63 @@ hr{
 }
 
 
+/* stories section */
+.stories_background{
+    background: url(../assets/bg.png) , linear-gradient(white , rgba(254, 163, 1, .30) );
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.child_grid{
+    background: var(--white);
+    border-radius: 16px;
+}
+.child_grid img{
+    border-radius: 16px 16px 0 0;
+}
 
 
+.grid_parent{
+    display: grid;
+    grid-template-columns: 2fr repeat(2 , 1fr);
+    gap: 20px;
+}
+.child_grid_1{
+    grid-row: span 2;
+}
 
+.story_text{
+    padding: 0 38px 34px;
+}
+
+.story_text h3{
+    margin: 33px 0 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.story_text p{
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666666;
+}
+
+.story_text_2{
+    padding: 0 38px 34px;
+}
+.story_text_2 h3{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 33px 0 0;
+}
+
+
+.stories_btn{
+    text-align: center;
+    margin-top: 80px;
+}
 
 
 
@@ -277,7 +332,7 @@ hr{
         display: none;
     }
 
-    .header,section{
+    .header,section , .main_stories{
         padding: 0 20px;
         width: 100%;
     }
@@ -311,7 +366,7 @@ hr{
     font-size: 1.62rem;
     margin-bottom: 20px;
    }
-   .main_curriculum{
+   .main_curriculum , .stories_background{
     padding: 40px 0 20px;
     width: 100%;
    }
@@ -329,5 +384,25 @@ hr{
    }
    .curriculum_button {
     font-size: .7rem;
+   }
+
+
+   /* stories section */
+   .child_grid:nth-child(1){
+    display: none;
+   }
+   .grid_parent{
+    grid-template-columns: repeat(2,1fr);
+   }
+   .story_text_2{
+    padding: 10px;
+   }
+
+   .story_text_2 h3{
+    font-size: .63rem;
+    margin-top: 15px;
+   }
+   .stories_btn{
+    margin-top: 20px;
    }
 }
