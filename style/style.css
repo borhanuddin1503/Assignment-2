@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: black;
+}
+
+:root{
+    --white:#F7F7F7;
+    --sky_blue:#01ACFD;
+    --orange:#FEA301;
+    --black:#111111;
+}
