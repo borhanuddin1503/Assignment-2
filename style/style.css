@@ -115,8 +115,8 @@ hr {
     font-weight: 500;
 }
 
-.nav_item:hover {
-    filter: opacity(.6);
+.nav_item:hover{
+    filter: opacity(.5);
 }
 
 .nav_item_1 {
