@@ -172,7 +172,22 @@ hr {
     line-height: 1.5;
 }
 
+.notice{
+    width: 1160px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.notice .section_heading{
+    margin-bottom: 20px;
+}
 
+marquee{
+    background: linear-gradient(to left , rgba(254, 163, 1, .30) , #EEE1FF);
+    padding: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: gray;
+}
 
 /* curriculum section */
 .section_background {
@@ -309,10 +324,11 @@ hr {
 
 .story_text {
     padding: 0 38px 34px;
+    position: relative;
 }
 
 .story_text h3 {
-    margin: 33px 0 50px;
+    margin: 60px 0 50px;
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.5;
@@ -327,19 +343,42 @@ hr {
 
 .story_text_2 {
     padding: 0 38px 0px;
+    position: relative;
 }
 
 .story_text_2 h3 {
     font-size: 1rem;
     font-weight: bold;
     line-height: 1.5;
-    margin: 33px 0 34px;
+    margin: 40px 0 34px;
 }
 
 
 .stories_btn {
     text-align: center;
     margin-top: 80px;
+}
+.main_stories h4{
+    display: inline-block;
+    border-radius: 47px;
+    font-weight: 500;   
+    color: var(--white);
+}
+.story_text h4{
+    padding: 15px 20px;
+    background: #3CD8E8;
+    position:absolute;
+    top: -90px;
+}
+.story_text_2 h4{
+    padding: 10px 20px;
+    background: #95B226;
+    position:absolute;
+    top: -60px;
+}
+
+.child_grid_3 h4{
+    background: #5D58F0;
 }
 
 /* footer section start */
@@ -514,12 +553,25 @@ footer {
 
     .story_text_2 h3 {
         font-size: .63rem;
-        margin: 15px 0 17;
+        margin: 22px 0 17px;
+    }
+
+    .story_text_2 h4{
+        font-size: .62rem;
+        top: -16px;
+        padding: 6px 11px;
+        background: #5D58F0;
     }
 
     .stories_btn {
         margin-top: 20px;
     }
+
+    .child_grid_2 h4{
+        background: #95B226;
+    }
+
+
 
     /* footer content */
     .footer_content{
@@ -555,6 +607,15 @@ footer {
         padding: 0;
     }
     .footer_col_2 ul li a{
+        font-size: 1rem;
+    }
+
+    .notice{
+        width: 100%;
+        padding: 40px 20px 0;
+    }
+
+    marquee{
         font-size: 1rem;
     }
 }
