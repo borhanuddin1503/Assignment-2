@@ -326,14 +326,14 @@ hr {
 }
 
 .story_text_2 {
-    padding: 0 38px 34px;
+    padding: 0 38px 0px;
 }
 
 .story_text_2 h3 {
     font-size: 1rem;
     font-weight: bold;
     line-height: 1.5;
-    margin: 33px 0 0;
+    margin: 33px 0 34px;
 }
 
 
@@ -466,13 +466,16 @@ footer {
     /* curicullum section responsive */
     .section_heading {
         font-size: 1.62rem;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .main_curriculum,
     .stories_background {
         padding: 40px 0 20px;
         width: 100%;
+    }
+    .stories_background{
+        padding: 40px 0;
     }
 
     .curriculum_wrappers {
@@ -511,7 +514,7 @@ footer {
 
     .story_text_2 h3 {
         font-size: .63rem;
-        margin-top: 15px;
+        margin: 15px 0 17;
     }
 
     .stories_btn {
